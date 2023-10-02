@@ -1,0 +1,254 @@
+
+{% load static %}
+
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="keywords" content="Web Development, Realm Elevators Company, IT Services, Quote, App Development,
+Software Development,  web development, Posts">
+<meta name="description" property="og:description" content="From simple landing pages to
+ complex e-commerce websites, we have the knowledge and tools to build a site that will 
+ set you apart from the competition. Plus, with our focus on clean coding practices and
+  responsive design, your site will look great and function flawlessly on any device.">
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut Icon" type="icon" href="{% static 'media/mylogo.png' %}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;0,800;1,500&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/styles.css" class="rel" media="all">
+<link rel="stylesheet" href="/static/mystyles.css" class="rel">
+<link rel="stylesheet" href="/static/services.css">
+<title>Web Development - Realm Elevators Company</title>
+</head>
+<body>
+
+<!-- Navigation bar -->
+{% include 'navlinks.html' %}
+
+
+    <!----this is the about page-->
+    <div class="about-header">
+        <h1>Web Development</h1>
+    </div>
+
+
+    <!-- Introductory notes -->
+    <div class="intro">
+        <div class="def">
+            <h2>What is web Development</h2>
+            <p>Web development refers to the process of building 
+                and maintaining websites. It involves a combination of design,
+                programming, and other technical skills to create a functional 
+                and visually appealing website. Web development can include 
+                everything from building a simple static website to developing 
+                complex web applications.
+            </p>
+       </div>
+       <div class="process">
+        <h2 class="main-h3">Process involved</h2>
+        <div class="process-container">
+
+            <div class="cd-1">
+                <h3 class="title">1. Planning and analysis</h3>
+                <p>This stage involves defining the goals of the website, 
+                    identifying the target audience, and determining the 
+                    features and functionality that will be required.</p>
+            </div>
+            <div class="cd-1">
+                <h3 class="title">2. Design</h3>
+                <p>In this stage, the look and feel of the website is created.
+                     This includes the layout, colors, typography, 
+                     and other visual elements.</p>
+            </div>
+            <div class="cd-1">
+                <h3 class="title">3. Development</h3>
+                <p>This is where the website is built using coding languages
+                     such as HTML, CSS, and JavaScript. This stage also involves 
+                     creating databases, setting up web servers, 
+                     and other technical tasks.</p>
+            </div>
+            <div class="cd-1">
+                <h3 class="title">4. Testing</h3>
+                <p>Once the website is built, it is tested to ensure
+                     that it works as expected and is free from bugs or errors.</p>
+            </div>
+            <div class="cd-1">
+                <h3 class="title">5. Launch</h3>
+                <p>The website is launched and made available to the public.</p>
+            </div>
+            <div class="cd-1">
+                <h3 class="title">6. Maintenance</h3>
+                <p>After the website is launched, it requires ongoing maintenance
+                     to ensure that it continues to function properly 
+                     and remains up-to-date.</p>
+            </div>
+
+        </div>
+
+       </div>
+    </div>
+
+    <!-- Types of web services -->
+    <div class="t-services">
+         <h2 class="main-h3">Types of Websites</h2>
+        <div class="t-services-container">
+
+            <div class="card-l">
+                <div class="cd-2">
+                    <h2>Blog websites</h2>
+                    <p>These are websites that are used to publish articles
+                         or other types of content.  They typically include
+                         features such as comments, archives,and categories.</p>
+                </div>
+                <img src="{% static 'media/blogweb.jpg' %}" alt="">
+            </div>
+            
+            <div class="card-r">
+                <img src="{% static 'media/socialmediaweb.jpg' %}" alt="">
+                <div class="cd-2">
+                    <h2>Social media websites</h2>
+                    <p>These are websites that are used to connect people
+                         with each other. They typically include features such as
+                          profiles, messaging and newsfeeds.</p>
+                </div>                
+            </div>
+
+          <div class="card-l">
+            <div class="cd-2">
+                <h2>Corporate websites</h2>
+                <p>These are websites that are used to provide information about
+                    a company or organization. They typically include features
+                     such as br an "About Us" page,  a list of products or services,
+                     and contact information.</p>
+            </div>
+            <img src="{% static 'media/corporateweb.jpg' %}" alt="">
+          </div>
+
+
+            <div class="card-r">
+                <img src="{% static 'media/educationalweb.jpg' %}" alt="">
+                <div class="cd-2">
+                    <h2>Educational websites</h2>
+                    <p>These are websites that are used to provide information
+                         and resources related to education.  They can include
+                          features  such as online courses, quizzes,
+                         and forums.</p>
+                </div>
+            </div>
+
+
+            <div class="card-l">
+                <div class="cd-2">
+                    <h2>Ecommerce Website</h2>
+                    <p>These are websites, where someone or even a company can sell their services, products
+                    online and even people can make payment online..</p>
+                </div>
+                <img src="{% static 'media/ecommerceweb.jpg' %}" alt="">
+            </div>
+
+          <div class="card-r">
+            <img src="{% static 'media/portfolio.jpg' %}" alt="">
+            <div class="cd-2">
+                <h2>Personal websites</h2>
+                <p>These are websites that are created by individuals for 
+                     personal reasons. They can include features such as blogs,
+                     portfolios, and photo galleries.</p>
+            </div>
+          </div>
+
+
+        </div>
+
+<!-- Conclussion -->
+        <div class="def">
+            <h2>Summary</h2>
+            <p>Overall, web development is a complex process that 
+                involves a variety of skills and expertise. Whether you are building 
+                a simple blog or a complex web application, 
+                it is important to have a solid understanding of 
+                the different stages of web development and the various 
+                types of websites that exist.
+            </p>
+       </div>
+    </div>
+
+       <!-- Contact section / requeting quote-->
+       <section class="quote" id="quote">
+        <h2 class="title">Reach out to our Experts</h2>
+                <div class="container">
+                    
+                    {% include 'contact_form.html' %}
+
+                </div>
+    </section>
+
+
+
+
+<!---this is the footer-->
+{% include 'footer.html' %}
+
+
+    <!---javascript for scroll to top button-->
+    <script>
+        // Get the button:
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+   
+    <!--Start of Tawk.to Script-->
+   <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/64116eb231ebfa0fe7f2abfd/1gri1gqna';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+    
+    
+    <!---javascript for closing and opening menu on small screens-->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right='0';
+        }
+        function hideMenu(){
+            navLinks.style.right='-100%';
+        }
+
+    </script>
+
+{% comment %} <!--this is scrollreveal js--->   {% endcomment %}
+<script src="https://unpkg.com/scrollreveal"></script>
+{% comment %} <!---This is the main javascript file--> {% endcomment %}
+<script src="/static/other/main.js"></script>
+</body>
+</html>

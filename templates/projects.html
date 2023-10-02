@@ -1,0 +1,235 @@
+{% load static %}
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="Projects, Realm Elevators Company, IT Services, Quote, App Development,
+Software Development,  web development, Posts, projects, ecommerce websites, photography wesbites">
+<meta name="description" property="og:description" content="We Check out our recent projects">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut Icon" type="icon" href="{% static 'media/mylogo.png' %}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;0,800;1,500&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/mystyles.css" class="rel" media="all">
+<link rel="stylesheet" href="/static/styles.css" class="rel" media="all">
+<title>Projects - Featured Projects</title>
+
+<style>
+    .mysite{
+        text-align: center;
+    }
+    .mysite img{
+        width: 500px;
+        height: 600px;
+    }
+    @media(max-width: 767px){
+        .mysite img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+
+<!-- Navigation bar -->
+{% include 'navlinks.html' %}
+
+
+
+<!-- Carousel Section -->
+<div class="service-header">
+    <h1>Featured Projects</h1>
+</div>
+<!-- Slider main container -->
+<section class="website-container">
+<!-- Container for the image gallery -->
+<h2>Websites & Web Applications</h2>
+<div class="container">
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="{% static 'media/website-1.JPG' %}" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="{% static 'media/website-2.JPG' %}" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="{% static 'media/website-3.JPG' %}" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="{% static 'media/website-4.JPG' %}" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="{% static 'media/website-5.JPG' %}" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="{% static 'media/website-6.JPG' %}" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="{% static 'media/website-1.JPG' %}" style="width:100%" onclick="currentSlide(1)" alt="Tours and Adventure Website">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="{% static 'media/website-2.JPG' %}" style="width:100%" onclick="currentSlide(2)" alt="Cycle Ecommerce Website">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="{% static 'media/website-3.JPG' %}" style="width:100%" onclick="currentSlide(3)" alt="Fashion Website">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="{% static 'media/website-4.JPG' %}" style="width:100%" onclick="currentSlide(4)" alt="Personal Portfolio Website">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="{% static 'media/website-5.JPG' %}" style="width:100%" onclick="currentSlide(5)" alt="News Blog Website">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="{% static 'media/website-6.JPG' %}" style="width:100%" onclick="currentSlide(6)" alt="Fruit Vendor Website">
+    </div>
+  </div>
+</div>
+</section><br><br>
+
+<div class="mysite"><img src="https://img.freepik.com/free-vector/young-man-cap-working-his-clean-office-desk_3446-508.jpg?w=740&t=st=1686662408~exp=1686663008~hmac=ce19b974ba4a89d7c70ee2e2c3a7256177604e72670730d7ad159b7c626ef025"/>
+<br><br>
+<h2>Still under construction</h2></div>
+
+
+
+
+  
+     <!-- Contact section / requeting quote-->
+     <section class="quote" id="quote">
+        <h2 class="title">Reach out to our Experts</h2>
+                <div class="container">
+                    
+                    {% include 'contact_form.html' %}
+
+                </div>
+    </section>
+
+
+
+<!---this is the footer-->
+{% include 'footer.html' %}
+
+
+
+    <!---javascript for scroll to top button-->
+    <script>
+        // Get the button:
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/64116eb231ebfa0fe7f2abfd/1gri1gqna';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+    
+    
+    <!---javascript for closing and opening menu on small screens-->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right='0';
+        }
+        function hideMenu(){
+            navLinks.style.right='-220px';
+        }
+        </script>
+
+
+<!-- Carousel Script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="/static/other/projects.js"></script>
+{% comment %} <!--this is scrollreveal js--->   {% endcomment %}
+<script src="https://unpkg.com/scrollreveal"></script>
+<!---This is the main javascript file-->
+<script src="/static/other/main.js"></script>
+
+<!---javascript code for projects slide-->
+<script>
+   
+   let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>

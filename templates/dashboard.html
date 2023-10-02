@@ -1,0 +1,29 @@
+{% extends 'master.html' %}
+
+{% block title %}
+Dashboard
+{% endblock %}
+
+{% block content %}
+<h1>Welcome {{ user.username }}!</h1>
+
+{% if projects %}
+    <h2>My Projects</h2>
+    <ul>
+        {% for project in projects %}
+            <li><a href="{% url 'project_detail' project.id %}">{{ project.title }}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>You do not have any projects yet.</p>
+{% endif %}
+
+<h2>Create a New Project</h2>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ create_form.as_p }}
+    <button type="submit" class="btn btn-primary mt-3">Create Project</a> </button>
+    
+
+</form>
+{% endblock %}

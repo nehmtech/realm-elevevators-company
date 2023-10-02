@@ -1,0 +1,134 @@
+{% load static %}
+
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="keywords" content="Terms and Conditions, Realm Elevators Company, IT Services, Quote, App Development,
+Software Development,  web development, Posts">
+<meta name="description" property="og:description" content="Check out our terms of service">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut Icon" type="icon" href="{% static 'media/mylogo.png' %}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;0,800;1,500&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/mystyles.css" class="rel" media="all">
+<title>Terms and Conditions - Realm Elevators Company</title>
+</head>
+<body>
+
+<!-- Navigation bar -->
+{% include 'navlinks.html' %}
+
+
+
+<!-- Main Content -->
+
+<section class="terms">
+    <h1>Terms and Conditions for IT Solution Providing Company</h1>
+    <h2> Introduction</h2>
+    <p>These Terms and Conditions ("Agreement") govern the use of the IT solution services provided by Realm Elevators Company. By accessing or using the services, you agree to be bound by this Agreement.</p>
+    
+    <h2>Services</h2>
+    <p>The Company provides IT solution services to its clients in accordance with the agreed-upon terms and conditions, which will be set out in a separate service agreement between the Company and its clients.</p>
+    
+    <h2> Fees and Payment</h2>
+    <p>The fees for the services provided by the Company will be specified in the service agreement between the Company and its clients. The payment terms and methods will also be outlined in the service agreement. The Company reserves the right to change the fees for its services from time to time, with reasonable notice given to its clients.</p>
+   
+    <h2>Confidentiality</h2>
+    <p>The Company will keep all confidential information obtained from its clients during the course of providing its services in strict confidence. The Company will not disclose any confidential information to any third party without the prior written consent of the client, except as required by law.</p>
+    
+    <h2> Intellectual Property</h2>
+    <p>The Company retains all intellectual property rights in any software, programs, applications, tools, or other materials developed by the Company in the course of providing its services. The client may use such materials solely for the purposes specified in the service agreement between the Company and the client.</p>
+   
+    <h2> Limitation of Liability</h2>
+    <p>The Company shall not be liable to the client or any third party for any damages, including but not limited to, direct, indirect, incidental, punitive, or consequential damages, arising from the use of the Company's services or any software, programs, applications, tools, or other materials developed by the Company in the course of providing its services.</p>
+    
+    <h2> Indemnification</h2>
+    <p>The client agrees to indemnify, defend, and hold harmless the Company and its officers, directors, employees, and agents from any and all claims, damages, liabilities, costs, and expenses arising from the client's use of the Company's services.</p>
+   
+    <h2> Termination</h2>
+    <p>Either party may terminate the service agreement upon written notice to the other party. Upon termination, the client must pay the Company for all services provided up to the date of termination, and the client must return all software, programs, applications, tools, or other materials developed by the Company in the course of providing its services.</p>
+   
+    <h2>Governing Law and Jurisdiction</h2>
+    <p>This Agreement shall be governed by and construed in accordance with the laws of Kenya. The parties agree to submit to the exclusive jurisdiction of the courts of Kenya in any dispute arising from this Agreement.</p>
+    
+    <h2> Entire Agreement</h2>
+    <p>This Agreement constitutes the entire agreement between the parties with respect to the subject matter hereof and supersedes all prior negotiations, understandings, and agreements between the parties.
+     <br><br>
+        By using the services provided by the Company, the client agrees to be bound by the terms and conditions set forth in this Agreement.</p>
+</section>
+
+
+
+
+
+
+
+<!---this is the footer-->
+{% include 'footer.html' %}
+
+
+
+
+
+    <!---javascript for scroll to top button-->
+    <script>
+        // Get the button:
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+
+        <!--Start of Tawk.to Script-->
+   <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/64116eb231ebfa0fe7f2abfd/1gri1gqna';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+    
+    
+    <!---javascript for closing and opening menu on small screens-->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right='0';
+        }
+        function hideMenu(){
+            navLinks.style.right='-100%';
+        }
+        </script>
+
+
+{% comment %} <!--this is scrollreveal js--->   {% endcomment %}
+<script src="https://unpkg.com/scrollreveal"></script>
+<!---This is the main javascript file-->
+<script src="other/main.js"></script>
+</body>
+</html>

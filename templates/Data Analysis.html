@@ -1,0 +1,212 @@
+
+{% load static %}
+
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="keywords" content="Data Analysics, Realm Elevators, IT Services, Quote, App Development,
+ Software Development, Services, web development, Posts">
+<meta name="description" property="og:description" content="Our commitment to quality and
+ attention to detail ensures that you receive accurate and reliable results every time.">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut Icon" type="icon" href="{% static 'media/mylogo.png' %}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;0,800;1,500&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/styles.css" class="rel" media="all">
+<link rel="stylesheet" href="/static/mystyles.css" class="rel">
+<link rel="stylesheet" href="/static/services.css">
+<title>Data Analysis - Realm Elevators Company</title>
+</head>
+<body>
+
+<!-- Navigation bar -->
+{% include 'navlinks.html' %}
+
+
+
+
+
+    <!----this is the about page-->
+    <div class="about-header">
+        <h1>Data Analysis</h1>
+    </div>
+
+
+    <!-- Introductory notes -->
+    <div class="intro">
+        <div class="def">
+            <h2>What is Data Analysis</h2>
+            <p>Data analysis is the process of examining and interpreting
+                 data to draw conclusions and insights from it.
+                  It involves using statistical and computational techniques
+                   to transform raw data into meaningful information that 
+                   can inform decision-making and help solve problems.
+            </p>
+       </div>
+       <div class="process">
+        <h2 class="main-h3">Process involved</h2>
+        <div class="process-container">
+
+            <div class="cd-1">
+                <h3 class="title">1. Data collection </h3>
+                <p>Collecting data from various sources, 
+                    such as surveys, experiments, and databases.
+                     </p>
+            </div>
+            <div class="cd-1">
+                <h3 class="title">2. Data cleaning</h3>
+                <p>Preparing the data for analysis by removing errors, outliers,
+                     and inconsistencies.</p>
+            </div>
+            <div class="cd-1">
+                <h3 class="title">3. Data exploration</h3>
+                <p>Exploring the data using visualizations and descriptive 
+                    statistics to identify patterns and relationships.</p>
+            </div>
+            <div class="cd-1">
+                <h3 class="title">4. Data analysis</h3>
+                <p>Analyzing the data using statistical and machine
+                     learning techniques to uncover insights and make predictions.</p>
+            </div>
+            <div class="cd-1">
+                <h3 class="title">5. Data visualization</h3>
+                <p>Communicating the results of the analysis through
+                     visualizations, such as charts, graphs, and dashboards. </p>
+            </div>
+            <div class="cd-1">
+                <h3 class="title">6. Interpretation</h3>
+                <p>Drawing conclusions and making recommendations based on the analysis. </p>
+            </div>
+
+        </div>
+
+       </div>
+    </div>
+
+    <!-- Types of web services -->
+    <div class="t-services">
+         <h2 class="main-h3">Types of Data Analysis</h2>
+        <div class="t-services-container">
+
+            <div class="card-l">
+                <div class="cd-2">
+                    <h2>Descriptive analysis</h2>
+                    <p>Examining data to understand its characteristics, <br>
+                         such as its distribution and central tendency.</p>
+                </div>
+                <img src="{% static 'media/analysis1.jpg' %}" alt="">
+            </div>
+            
+            <div class="card-r">
+                <img src="{% static 'media/analysis2.jpg' %}" alt="">
+                <div class="cd-2">
+                    <h2>Inferential analysis</h2>
+                    <p>Making inferences about a population based on a <br>
+                         sample of data.</p>
+                </div>                
+            </div>
+
+          <div class="card-l">
+            <div class="cd-2">
+                <h2>Exploratory analysis</h2>
+                <p>Examining data to identify patterns and relationships <br>
+                     that can inform further analysis.</p>
+            </div>
+            <img src="{% static 'media/analysis3.jpg' %}" alt="">
+          </div>
+
+
+            <div class="card-r">
+                <img src="{% static 'media/analysis4.png' %}" alt="">
+                <div class="cd-2">
+                    <h2>Predictive analysis</h2>
+                    <p>Using statistical and machine learning techniques <br>
+                         to make predictions about future events or trends.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+      <!-- Contact section / requeting quote-->
+      <section class="quote" id="quote">
+        <h2 class="title">Reach out to our Experts</h2>
+                <div class="container">
+
+                    {% include 'contact_form.html' %}
+                    
+                </div>
+    </section>
+
+
+
+<!---this is the footer-->
+{% include 'footer.html' %}
+
+
+
+    <!---javascript for scroll to top button-->
+    <script>
+        // Get the button:
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+   
+    <!--Start of Tawk.to Script-->
+   <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/64116eb231ebfa0fe7f2abfd/1gri1gqna';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+    
+    
+    <!---javascript for closing and opening menu on small screens-->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right='0';
+        }
+        function hideMenu(){
+            navLinks.style.right='-100%';
+        }
+
+    </script>
+
+{% comment %} <!--this is scrollreveal js--->   {% endcomment %}
+<script src="https://unpkg.com/scrollreveal"></script>
+{% comment %} <!---This is the main javascript file--> {% endcomment %}
+<script src="/static/other/main.js"></script>
+</body>
+</html>

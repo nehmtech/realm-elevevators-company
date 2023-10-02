@@ -1,0 +1,266 @@
+
+{% load static %}
+
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="keywords" content="Software Development, Realm Elevators Company, IT Services, Quote, App Development,
+Software Development,  web development, Posts">
+<meta name="description" property="og:description" content="Our team of experienced 
+developers is here to provide you with top-notch software development services that
+ meet your unique needs and requirements.">
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut Icon" type="icon" href="{% static 'media/mylogo.png' %}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;0,800;1,500&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/styles.css" class="rel" media="all">
+<link rel="stylesheet" href="/static/mystyles.css" class="rel">
+<link rel="stylesheet" href="/static/services.css">
+<title>Software Development - Realm Elevators Company</title>
+</head>
+<body>
+
+<!-- Navigation bar -->
+{% include 'navlinks.html' %}
+
+
+
+    <!----this is the about page-->
+    <div class="about-header">
+        <h1>Software Development</h1>
+    </div>
+
+
+    <!-- Introductory notes -->
+    <div class="intro">
+        <div class="def">
+            <h2>What is Software Development</h2>
+            <p>Software development is the process of designing, 
+                creating, testing, and maintaining software applications 
+                and systems. It involves the use of various programming 
+                languages, software development tools, and methodologies 
+                to build applications that solve specific problems
+                 or meet certain requirements.
+            </p>
+       </div>
+       <div class="process">
+        <h2 class="main-h3">Process involved</h2>
+        <div class="process-container">
+
+            <div class="cd-1">
+                <h3 class="title">1. Planning </h3>
+                <p>The software development process typically 
+                    begins with gathering requirements from stakeholders, 
+                    which could include end-users, project managers, 
+                    and business analysts. These requirements are then analyzed 
+                    and used to design the software system.
+                     </p>
+            </div>
+            <div class="cd-1">
+                <h3 class="title">2. Design</h3>
+                <p>The design phase involves creating a blueprint of the software,
+                    which includes the architecture, user interface, and data models.</p>
+            </div>
+            <div class="cd-1">
+                <h3 class="title">3. Development</h3>
+                <p>After the design phase, developers start coding
+                    the software using programming languages such as Java, 
+                    C++, Python, and JavaScript. They also use development 
+                    tools such as integrated development environments 
+                    (IDEs) to write, debug, and test the software code.</p>
+            </div>
+            <div class="cd-1">
+                <h3 class="title">4. Testing</h3>
+                <p>Testing is an essential part of the software development process.
+                     It involves running the software through various test 
+                     scenarios to identify bugs and errors that need to be fixed.
+                      Testing can be manual or automated, and it may involve unit
+                       testing, integration testing, and acceptance testing.</p>
+            </div>
+            <div class="cd-1">
+                <h3 class="title">5. Deployment</h3>
+                <p>Once the software has been tested and all identified 
+                    bugs and issues have been fixed, it is deployed to production. 
+                    The deployment process involves installing the software on servers
+                     or making it available through cloud-based services. </p>
+            </div>
+            <div class="cd-1">
+                <h3 class="title">6. Maintenance</h3>
+                <p>Once the software is deployed, it needs to be maintained and
+                     updated regularly to ensure it continues to meet the needs
+                      of its users and operates correctly.</p>
+            </div>
+
+        </div>
+
+       </div>
+    </div>
+
+    <!-- Types of web services -->
+    <div class="t-services">
+         <h2 class="main-h3">Types of Software Applications</h2>
+        <div class="t-services-container">
+
+            <div class="card-l">
+                <div class="cd-2">
+                    <h2>Desktop applications</h2>
+                    <p>These are software applications that run on a computer's <br>
+                        operating system, such as Microsoft <br>
+                         Windows or macOS.</p>
+                    <a href="quote.html"><button>Get a Quote</button></a>
+                </div>
+                <img src="{% static 'media/applications1.jpg' %}" alt="">
+            </div>
+            
+            <div class="card-r">
+                <img src="{% static 'media/applications2.jpg' %}" alt="">
+                <div class="cd-2">
+                    <h2>Web applications</h2>
+                    <p>These are software applications that run on a web <br>
+                        browser and are accessed over the internet. They <br>
+                        are usually built using web development <br>
+                        technologies such as HTML, CSS, and JavaScript.</p>
+                </div>                
+            </div>
+
+          <div class="card-l">
+            <div class="cd-2">
+                <h2>Mobile applications</h2>
+                <p>These are software applications that run on mobile <br>
+                    devices such as smartphones and tablets. They are <br>
+                     usually built using mobile app development <br>
+                     platforms such as Android Studio and Xcode.</p>
+            </div>
+            <img src="{% static 'media/applications3.jpg' %}" alt="">
+          </div>
+
+
+            <div class="card-r">
+                <img src="{% static 'media/applications4.jpg' %}" alt="">
+                <div class="cd-2">
+                    <h2>Enterprise applications</h2>
+                    <p>These are software applications that are designed for <br>
+                         use within a business or organization. They may <br>
+                         include customer relationship management (CRM) <br>
+                         systems, enterprise resource planning (ERP) <br>
+                         systems, and supply chain management (SCM) systems.</p>
+                </div>
+            </div>
+
+
+            <div class="card-l">
+                <div class="cd-2">
+                    <h2>Embedded systems</h2>
+                    <p> These are software applications that are embedded <br>
+                        into hardware devices such as medical equipment, <br>
+                        automotive systems, and home appliances.</p>
+                </div>
+                <img src="{% static 'media/applications5.jpg' %}" alt="">
+            </div>
+
+          <div class="card-r">
+            <img src="{% static 'media/applications6.jpg' %}" alt="">
+            <div class="cd-2">
+                <h2>Gaming applications</h2>
+                <p>These are software applications that are designed <br>
+                    for gaming purposes. They can include desktop, <br>
+                    mobile, and web-based games.</p>
+            </div>
+          </div>
+
+
+        </div>
+
+<!-- Conclussion -->
+        <div class="def">
+            <h2>Summary</h2>
+            <p>In conclusion, software development is a complex and 
+                ongoing process that involves designing, coding, testing,
+                 deploying, and maintaining software applications and systems.
+                  There are several types of software applications that can be
+                   developed, each with its own unique requirements and challenges.
+            </p>
+       </div>
+    </div>
+
+
+      <!-- Contact section / requeting quote-->
+      <section class="quote" id="quote">
+        <h2 class="title">Reach out to our Experts</h2>
+                <div class="container">
+                    
+                    {% include 'contact_form.html' %}
+
+                </div>
+    </section>
+
+
+<!---this is the footer-->
+{% include 'footer.html' %}
+
+
+
+    <!---javascript for scroll to top button-->
+    <script>
+        // Get the button:
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+   
+    <!--Start of Tawk.to Script-->
+   <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/64116eb231ebfa0fe7f2abfd/1gri1gqna';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+    
+    
+    <!---javascript for closing and opening menu on small screens-->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right='0';
+        }
+        function hideMenu(){
+            navLinks.style.right='-100%';
+        }
+
+    </script>
+
+{% comment %} <!--this is scrollreveal js--->   {% endcomment %}
+<script src="https://unpkg.com/scrollreveal"></script>
+{% comment %} <!---This is the main javascript file--> {% endcomment %}
+<script src="/static/other/main.js"></script>
+</body>
+</html>

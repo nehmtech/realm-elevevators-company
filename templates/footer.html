@@ -1,0 +1,50 @@
+{% load static %}
+
+<!---this is the footer section-->
+<footer style="bottom:0;">
+    
+    <div class="footer-container">
+        <div class="footer-card">
+    <img src="{% static 'media/mylogo.png' %}">
+    <h3>Realm Elevators Company</h3>
+<p>We are top IT company in Kenya which provides businesses with the tools and 
+    technology they need to achieve their goals.</p>
+        </div>
+        <div class="footer-card">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/privacy_policy">Privacy Policies</a></li>
+                <li><a href="/terms_and_conditions">Terms and Conditions</a></li>
+            </ul>
+        </div>
+        <div class="footer-card">
+            <h3>Social Media</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=100083023307947&mibextid=ZbWKwL"><i class="fa fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://twitter.com/realm_elevators?t=dEGgPAMdshyoagHUhRDFLQ&s=09"><i class="fa fa-twitter"></i> Twitter</a></li>
+                <li><a href="http://www.linkedin.com/in/realm-elevators-company-8b3760267"><i class="fa fa-linkedin"></i> Linkedin</a></li>
+                <li><a href="https://t.me/realmelevators"><i class="fa fa-telegram"></i> Telegram</a></li>
+            </ul>
+        </div>
+        <div class="footer-card">
+            <h3>Do you have any query? <br><span>Get help now!</span></h3>
+            <ul>
+                <li>Call/SMS 24/7:</li>
+                <li style="color: #FFA101;">+254746092415 or +254115580891 or <br>+254707967928</li>
+                <li>Email us: info@realmelevators.com</li><br><br>
+                <a href="/quote" class="button">Get a Quote</a>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="scrolltotop">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-long-arrow-up"></i></button>
+        </div>
+        <p class="copyrights">All rights reserved &#169; Realm Elevators Company - <span id="year"></span><script>
+        document.getElementById("year").innerHTML=new Date().getFullYear();
+        </script></p>
+    </footer>

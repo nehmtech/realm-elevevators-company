@@ -1,0 +1,25 @@
+{% load static %}
+
+ <!-- Navigation bar -->
+<header>
+    <div class="contact-details">
+        <div class="email"><i class="fa fa-envelope"></i> info@realmelevators.com</div>
+        <div class="phone"><i class="fa fa-phone"></i> +254 100534849</div>
+    </div>
+    <div class="navbar">
+    <a href="index.html"><img src="{% static 'media/mylogo.png' %}""></a>
+    <div class="menu-items" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/services">Services</a>
+            <a href="/projects">Projects</a>
+            <a href="/contact">Contact</a>
+            <a href="https://blogs.realmelevators.com">Blogs</a>
+            <a href="/quote" class="mybtn">Get a Quote</a>
+        </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+    </div>
+</header>
