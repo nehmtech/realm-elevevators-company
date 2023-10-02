@@ -103,22 +103,9 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 
 # Email settings 1
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'mail.realmelevators.com'
-EMAIL_PORT = 465
-EMAIL_HOST_USER = 'quotes@realmelevators.com'
-EMAIL_HOST_PASSWORD = 'Realmelevators2023'
-EMAIL_USE_TLS = False
-EMAIL_USE_SSL = True
 
 # Email settings 2
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'mail.realmelevators.com'
-EMAIL_PORT = 465
-EMAIL_HOST_USER = 'info@realmelevators.com'
-EMAIL_HOST_PASSWORD = 'Realmelevators2023'
-EMAIL_USE_TLS = False
-EMAIL_USE_SSL = True
+
 
 
 # Database
